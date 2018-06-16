@@ -173,10 +173,22 @@ span.dot {
 .footer {
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    height: 315px;
+    box-shadow: inset 0 1px 0 #e1e0e0;
+    background-color: #f8f8f8;
 }
 
 .footer-bottom {
     align-items: center;
+}
+
+.logo-bottom {
+    font-family: "eurofurence";
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+    margin-bottom: 0;
 }
 
 i {
@@ -184,8 +196,13 @@ i {
     cursor: pointer; 
 }
 
+i:hover {
+    font-size: 2em;
+}
+
 .icons {
     margin-bottom: 30px;
+    font-size: 1.5em;
 }
 
 .navbar-toggler {
