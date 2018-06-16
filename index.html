@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Blogin</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container head-container">
+            <h1 class="logo">Blogin<span class="dot">.</span></h1>
+            <lu class="nav">
+                <li class="dropdown-toggle" data-toggle="dropdown" onmouseover="toggleDropdown()" onclick="toggleDropdown()">Jurnal
+                    <i class="fas fa-sort-down"></i>
+                    <modal class="modal modal-dropdown hide">
+                        <ul>
+                            <li>October 2016</li>
+                            <li>January 2017</li>
+                            <li>April 2017</li>
+                            <li>July 2017</li>
+                        </ul>
+                    </modal>
+                </li>
+                <li onclick="openJurnal()">About</li>
+                <li onclick="openJurnal()">Work</li>
+                <li onclick="openJurnal()">Contact</li>
+            </lu>
+            <button class="navbar-toggler" type="button" onclick="toggleNavBar()">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+    <main>
+        <div class="main-blogs">
+            <box class="container input-item">
+                <div class="img-blog">
+                    <img class="img" src="img/img1.png" alt="Duis Aute"></img>
+                </div>
+                <div class="input-text">
+                    <h2 class="uppercase">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                    </p>
+                    <button class="btn btn-continue" onclick="openModal()">Continue Reading</button>
+                </div>
+            </box>
+            <box class="container input-item">
+                <div class="img-blog">
+                    <img class="img" src="img/img2.png" alt="Duis Aute"></img>
+                </div>
+                <div class="input-text">
+                    <h2 class="uppercase">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                    </p>
+                    <button class="btn btn-continue" onclick="openModal()">Continue Reading</button>
+                </div>
+             </box>
+            <box class="container input-item">
+                <div class="img-blog">
+                    <img class="img" src="img/img3.png" alt="Duis Aute"></img>
+                </div>
+                <div class="input-text">
+                    <h2 class="uppercase">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo doconsequat,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur...
+                    </p>
+                    <button class="btn btn-continue" onclick="openModal()">Continue Reading</button>
+                </div>
+            </box>
+        </div>
+        <modal class="modal modal-read-more hide">
+            <p>Join us to get access to the latest stories!</p>
+            <div class="submit">
+                <input class="email-box" type="email" placeholder="Enter a valid email address">
+                <i class="fas fa-arrow-circle-right"></i>
+            </div>
+            <button class="close-modal" onclick="closeModal()">close</button>
+        </modal>
+        <div class="container flex pages">
+            <div class="flex page-left uppercase">  
+                <div class="arrow">←</div>
+                <div>previous</div>
+            </div>
+            <div class="flex page-right uppercase">
+                <div>next</div>
+                <div class="arrow">→</div>
+            </div>
+        </div>
+    </main>
+    <footer class="flex footer">
+        <h4>Blogin<span class="dot">.</span></h4>
+        <p class="footer-bottom"></p>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</p>
+        <div class="flex icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-behance-square"></i>
+            <i class="fab fa-dribbble-square"></i>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
